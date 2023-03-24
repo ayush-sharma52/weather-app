@@ -9,6 +9,7 @@ const weatherInfo=require('./util/weatherInfo')
 
 //now it's a server
 const app=express();
+const port = process.env.PORT || 3000 //to access the port that the deploying app provides us
 
 //define paths for expres config
 const publicDirectoryPath=path.join(__dirname,'../public');
@@ -114,6 +115,6 @@ res.render('404',{
 });
 
 //server is up on local host:3000
-app.listen(3000,()=>{
-    console.log('server is up on port 3000');
+app.listen(port,()=>{
+    console.log('server is up on port '+port);
 })
