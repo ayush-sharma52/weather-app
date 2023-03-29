@@ -15,6 +15,7 @@ const weatherInfo=(lat,long,callback)=>{
             description:body.current.weather_descriptions[0],
             temp:body.current.temperature,
             feelslike:body.current.feelslike,
+            humidity:body.current.humidity,
           })
         }
       });

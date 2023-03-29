@@ -13,7 +13,7 @@ weatherForm.addEventListener('submit', (e) => {
         }
         else{
         msg.innerText='Current weather is like '+data.description+'.'+'The temperature is '+data
-        .temp+'.'+'Although it feelsLike '+data.feelslike;
+        .temp+'.'+'Although it feelsLike '+data.feelslike+'. Humidity is '+data.humidity;
     }
     })
 })
